@@ -1,0 +1,25 @@
+.about-container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1em;
+}
+
+.inner-about-div {
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 2em;
+}
+
+@media only screen and (max-width: 800px) {
+  .about-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+  }
+  .inner-about-div {
+    grid-template-columns: 1fr;
+  }
+}

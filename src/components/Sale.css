@@ -1,0 +1,41 @@
+.main {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-container {
+  /* border: solid; */
+  padding: 1rem;
+}
+
+.navbar-buttons-container {
+  display: grid;
+  line-height: 2rem;
+  /* border: solid green; */
+  position: relative;
+}
+
+@media only screen and (max-width: 800px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    margin-top: 8em;
+    z-index: -2;
+  }
+  .navbar-container {
+    display: none;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .navbar-container {
+    display: inherit;
+  }
+  .mobile-nav {
+    display: none;
+  }
+}
